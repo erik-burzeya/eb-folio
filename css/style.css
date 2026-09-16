@@ -1,18 +1,47 @@
 /*Basic Site-Design-Settings*/
 body {
-  font-family: Lato, sans-serif;
-  background-color:antiquewhite;
+  font-family: Georgia, serif;
+  background-color:rgb(255, 249, 240);
   color: #333;
-  line-height: 1.5;
+  
   margin: 0;
-  padding: 22px;
+  padding: 20px;
 }
 
 /*Header-Styles*/
 h1 {
-  background-color: #0076ff;
   font-size: 2.5rem;
-  text-align: left;
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 10px;
+  text-align: center;
 }
+
+h2 {
+  font-size: 1rem;
+    font-style: italic;
+    font-weight: normal;
+
+  text-align: center;
+}
+
+/*Main-Box*/
+.box {
+  min-height: calc(100vh - 40px);
+
+  background-color:rgb(203, 79, 79);
+  border: 1px solid #ddd;
+}
+
+
+
+
+
+
+
+
+
+/*INTERESTING COLORS/FONTS/STYLES:*/
+
+/*
+background-color:rgb(132, 103, 228);
+
+
+*(
