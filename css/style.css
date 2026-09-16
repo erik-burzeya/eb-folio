@@ -1,0 +1,18 @@
+/*Basic Site-Design-Settings*/
+body {
+  font-family: Lato, sans-serif;
+  background-color:antiquewhite;
+  color: #333;
+  line-height: 1.5;
+  margin: 0;
+  padding: 22px;
+}
+
+/*Header-Styles*/
+h1 {
+  background-color: #0076ff;
+  font-size: 2.5rem;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
