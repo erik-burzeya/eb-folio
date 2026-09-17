@@ -8,20 +8,6 @@ body {
   padding: 20px;
 }
 
-/*Header-Styles*/
-h1 {
-  font-size: 2.5rem;
-  text-align: center;
-}
-
-h2 {
-  font-size: 1rem;
-    font-style: italic;
-    font-weight: normal;
-
-  text-align: center;
-}
-
 /*Main-Box*/
 .box {
   min-height: calc(100vh - 40px);
@@ -30,11 +16,38 @@ h2 {
   border: 1px solid #ddd;
 }
 
+/*Header-Styles*/
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
 
+  padding-top: 200px;
+}
 
+h2 {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: normal;
 
+  text-align: center;
+}
 
+/*Dividing line*/
+hr {
+  border: 1px solid #333;
+  width: 20%;
+  margin: 30px auto;
+}
 
+.text-columns {
+  text-align: justify;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8%;
+
+  max-width: 600px;
+  margin: 35px auto;
+}
 
 
 
