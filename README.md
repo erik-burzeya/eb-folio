@@ -8,6 +8,18 @@ Rather than optimizing for the number of technologies, animations, or sections o
 
 Building it by hand also gives me the opportunity to understand the fundamentals behind the web instead of abstracting them away.
 
+---
+
+### Code
+The source code of this project is licensed under the MIT License.
+
+### Content
+Unless otherwise stated, the content of this portfolio, including text,
+images, graphics, and other creative works, is licensed under
+CC BY-NC 4.0.
+
+---
+
 ## Principles
 
 * **Less, but intentional.**
