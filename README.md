@@ -18,6 +18,8 @@ Unless otherwise stated, the content of this portfolio, including text,
 images, graphics, and other creative works, is licensed under
 CC BY-NC 4.0.
 
+[CC BY-NC 4.0](CONTENT_LICENSE.md)
+
 ---
 
 ## Principles
