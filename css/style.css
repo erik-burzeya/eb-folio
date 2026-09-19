@@ -156,6 +156,17 @@ a.uni-due:hover {
 
 /*--------------------------------------------------------*/
 
+.comment {
+  font-family: "Caveat";
+  font-size: 1.5rem;
+
+  font-weight: 1000;
+  text-align: center;
+
+  padding-top: 35px;
+  margin-bottom: 10px;
+}
+
 /*INTERESTING COLORS/FONTS/STYLES:
 - background-color:rgb(132, 103, 228);
 - 
