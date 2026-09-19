@@ -8,24 +8,52 @@
   background-color: #d59b9b;
   color:rgb(255, 249, 240);
 }
+
+
+
 /*Basic Site-Design-Settings*/
+html,
 body {
-  font-family: "Georgia", serif;
-  background-color:rgb(255, 249, 240);
-  color: #333;
-  
+  width: 100%;
+  height: 100%;
   margin: 0;
+  overflow: hidden;
+}
+body {
   padding: 20px;
+  box-sizing: border-box;
 }
 
 /*Main-Box*/
 .box {
-  min-height: calc(100vh - 40px);
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
 
-  background-color:rgb(203, 79, 79);
+  background-color: rgb(203, 79, 79);
+
+  background-image:
+    radial-gradient(rgba(255, 255, 255, 0.035) 0.7px, transparent 0.7px),
+    /*radial-gradient = small gradient, starting from the center. 
+    Here: creates small white dots (255, 255,255 is white).*/
+    radial-gradient(rgba(0, 0, 0, 0.035) 0.7px, transparent 0.7px);
+    /*Now, we add contrast to avoid the texture 
+    to feel like a regular dot-pattern*/
+
+  background-size: 3px 3px, 5px 5px;  /*= pattern size (both layers)*/
+  background-position: 0 0, 1px 2px;  /*= pattern position (both layers)*/
+
   border: 1px solid #ddd;
-}
+  position: relative;
 
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: clamp(30px, 8vh, 100px) 20px;
+}
 
 /*--------------------------------------------------------*/
 
@@ -34,7 +62,7 @@ h1 {
   font-size: 2.5rem;
   text-align: center;
 
-  padding-top: 200px;
+  color: black;
 }
 
 h2 {
@@ -43,11 +71,13 @@ h2 {
   font-weight: normal;
 
   text-align: center;
+  color: black;
+  margin: 10px 0 0;
 }
 
 /*Dividing line*/
 hr {
-  border: 1px solid #333;
+  border: 1px solid black;
   width: 180px;
   margin: 30px auto;
 }
@@ -59,8 +89,17 @@ hr {
   grid-template-columns: 1fr 1fr;
   gap: 8%;
 
-  max-width: 600px;
+  width: min(600px, 100%);
   margin: 35px auto;
+
+  color: black;
+
+    @media (max-width: 600px) { /*Mobile-Devices*/
+      .text-columns {
+        grid-template-columns: 1fr; /*Aligns the text columns underneath each other*/
+        gap: 20px;
+      }
+    }
 }
 
 /*--------------------------------------------------------*/
@@ -69,12 +108,19 @@ hr {
 /*Projects*/
 .projects {
   display: grid;
-  max-width: 590px;
+  width: min(590px, 100%);
 
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 
   margin: 35px auto 0;
+
+    @media (max-width: 700px) {
+      .projects {
+        grid-template-columns: 1fr;
+        width: min(300px, 100%);
+      }
+    }
 }
 
 .project {
@@ -85,7 +131,7 @@ hr {
   align-items: center;
   justify-content: center;
 
-  outline: 2px solid #333;
+  outline: 2px solid black;
   outline-offset: 2px;
 
   border-radius: 10px;
@@ -101,6 +147,7 @@ hr {
 }
 
 /*--------------------------------------------------------*/
+
 .contact p {
   margin: 0;
 }
@@ -127,15 +174,17 @@ hr {
   grid-template-columns: 1fr 1fr;
   gap: 8%;
 
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto 35px;
   margin-top: 15px;
+
+  color: black;
 }
 
 /*--------------------------------------------------------*/
 
 a {
-  color: #333;
+  color: black;
   text-decoration: none;
 }
 
@@ -145,7 +194,7 @@ a:hover {
 }
 
 .uni-due {
-  color: #333;
+  color: black;
   text-decoration: none;
 }
 
@@ -157,41 +206,18 @@ a.uni-due:hover {
 /*--------------------------------------------------------*/
 
 /*
-.comment{
+.comment {
+  width: min(600px, 100%);
   font-family: "Caveat";
   font-size: 1.2rem;
-  font-style: normal;
   font-weight: 200;
 }
 
-.comment .p1 {
+.comment .p1,
+.comment .p2,
+.comment .p3 {
   text-align: right;
-  margin-bottom: 15px;
-
-  text-align: right;
-  margin-left: 700px;
-  margin-right: 0px;
-
-  max-width: 150px;
-}
-  .comment .p2 {
-  text-align: right;
-  margin-bottom: 15px;
-
-  text-align: right;
-  margin-left: 700px;
-  margin-right: 0px;
-
-  max-width: 150px;
-}
-  .comment .p3 {
-  text-align: right;
-  margin-bottom: 15px;
-
-  text-align: right;
-  margin-left: 700px;
-  margin-right: 0px;
-
+  margin: 0 0 15px auto;
   max-width: 150px;
 }
 */
