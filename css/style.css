@@ -156,16 +156,45 @@ a.uni-due:hover {
 
 /*--------------------------------------------------------*/
 
-.comment {
+/*
+.comment{
   font-family: "Caveat";
-  font-size: 1.5rem;
-
-  font-weight: 1000;
-  text-align: center;
-
-  padding-top: 35px;
-  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 200;
 }
+
+.comment .p1 {
+  text-align: right;
+  margin-bottom: 15px;
+
+  text-align: right;
+  margin-left: 700px;
+  margin-right: 0px;
+
+  max-width: 150px;
+}
+  .comment .p2 {
+  text-align: right;
+  margin-bottom: 15px;
+
+  text-align: right;
+  margin-left: 700px;
+  margin-right: 0px;
+
+  max-width: 150px;
+}
+  .comment .p3 {
+  text-align: right;
+  margin-bottom: 15px;
+
+  text-align: right;
+  margin-left: 700px;
+  margin-right: 0px;
+
+  max-width: 150px;
+}
+*/
 
 /*INTERESTING COLORS/FONTS/STYLES:
 - background-color:rgb(132, 103, 228);
